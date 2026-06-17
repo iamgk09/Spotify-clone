@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotlite - Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="library">
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Spotlite home">
+        <span class="brand-mark">S</span>
+        <span>Spotlite</span>
+      </a>
+
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html" data-page-link="home">
+          <span class="icon">H</span>
+          <span>Home</span>
+        </a>
+        <a class="nav-link" href="search.html" data-page-link="search">
+          <span class="icon">S</span>
+          <span>Search</span>
+        </a>
+        <a class="nav-link" href="library.html" data-page-link="library">
+          <span class="icon">L</span>
+          <span>Library</span>
+        </a>
+      </nav>
+
+      <div class="playlist-stack">
+        <button class="ghost-button">+ Create playlist</button>
+        <button class="ghost-button">Liked songs</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="history-buttons" aria-label="History controls">
+          <button aria-label="Go back">&lt;</button>
+          <button aria-label="Go forward">&gt;</button>
+        </div>
+        <div class="top-actions">
+          <button class="pill secondary">Upgrade</button>
+          <button class="profile-button" aria-label="Profile">AG</button>
+        </div>
+      </header>
+
+      <section class="page" aria-labelledby="library-title">
+        <div class="library-top">
+          <div>
+            <p class="eyebrow">Your collection</p>
+            <h1 id="library-title">Library</h1>
+          </div>
+          <button class="pill">New playlist</button>
+        </div>
+
+        <div class="filter-row" aria-label="Library filters">
+          <button class="filter active">Playlists</button>
+          <button class="filter">Artists</button>
+          <button class="filter">Albums</button>
+        </div>
+
+        <div class="library-list">
+          <article class="library-item">
+            <span class="cover cover-green"></span>
+            <div>
+              <h3>Liked Songs</h3>
+              <p>Playlist - 128 songs</p>
+            </div>
+          </article>
+          <article class="library-item">
+            <span class="cover cover-blue"></span>
+            <div>
+              <h3>Focus Flow</h3>
+              <p>Playlist - Spotlite</p>
+            </div>
+          </article>
+          <article class="library-item">
+            <span class="cover cover-gold"></span>
+            <div>
+              <h3>Weekend Set</h3>
+              <p>Playlist - You</p>
+            </div>
+          </article>
+          <article class="library-item">
+            <span class="cover cover-red"></span>
+            <div>
+              <h3>Daily Mix 01</h3>
+              <p>Playlist - Updated today</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="player" aria-label="Now playing">
+      <div class="track-info">
+        <span class="mini-cover"></span>
+        <div>
+          <strong>Golden Hour</strong>
+          <span>Nova Lane</span>
+        </div>
+      </div>
+      <div class="player-controls">
+        <div class="control-row">
+          <button aria-label="Shuffle">Sh</button>
+          <button aria-label="Previous">Prev</button>
+          <button class="main-control" aria-label="Play">Play</button>
+          <button aria-label="Next">Next</button>
+          <button aria-label="Repeat">Rp</button>
+        </div>
+        <div class="progress-row">
+          <span>1:12</span>
+          <div class="progress"><span></span></div>
+          <span>3:48</span>
+        </div>
+      </div>
+      <div class="volume-row">
+        <span>Vol</span>
+        <div class="volume"><span></span></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

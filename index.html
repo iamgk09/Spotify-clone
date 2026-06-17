@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotlite - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Spotlite home">
+        <span class="brand-mark">S</span>
+        <span>Spotlite</span>
+      </a>
+
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html" data-page-link="home">
+          <span class="icon">H</span>
+          <span>Home</span>
+        </a>
+        <a class="nav-link" href="search.html" data-page-link="search">
+          <span class="icon">S</span>
+          <span>Search</span>
+        </a>
+        <a class="nav-link" href="library.html" data-page-link="library">
+          <span class="icon">L</span>
+          <span>Library</span>
+        </a>
+      </nav>
+
+      <div class="playlist-stack">
+        <button class="ghost-button">+ Create playlist</button>
+        <button class="ghost-button">Liked songs</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="history-buttons" aria-label="History controls">
+          <button aria-label="Go back">&lt;</button>
+          <button aria-label="Go forward">&gt;</button>
+        </div>
+        <div class="top-actions">
+          <button class="pill secondary">Upgrade</button>
+          <button class="profile-button" aria-label="Profile">AG</button>
+        </div>
+      </header>
+
+      <section class="page" aria-labelledby="home-title">
+        <div class="hero">
+          <div>
+            <p class="eyebrow">Good evening</p>
+            <h1 id="home-title">Music made for the moment</h1>
+          </div>
+          <button class="play-button" aria-label="Play featured playlist">Play</button>
+        </div>
+
+        <div class="quick-grid" aria-label="Quick picks">
+          <article class="quick-card">
+            <span class="cover cover-green"></span>
+            <span>Liked Songs</span>
+          </article>
+          <article class="quick-card">
+            <span class="cover cover-red"></span>
+            <span>Daily Mix 01</span>
+          </article>
+          <article class="quick-card">
+            <span class="cover cover-gold"></span>
+            <span>Fresh Pop</span>
+          </article>
+          <article class="quick-card">
+            <span class="cover cover-blue"></span>
+            <span>Focus Flow</span>
+          </article>
+        </div>
+
+        <div class="section-head">
+          <h2>Made for you</h2>
+          <a href="search.html">Show all</a>
+        </div>
+        <div class="album-grid">
+          <article class="album-card">
+            <span class="album-art art-1"></span>
+            <h3>Late Night Drive</h3>
+            <p>Neon pop, smooth synths, midnight energy.</p>
+          </article>
+          <article class="album-card">
+            <span class="album-art art-2"></span>
+            <h3>Chill Hits</h3>
+            <p>Easy tracks for study, work, and soft focus.</p>
+          </article>
+          <article class="album-card">
+            <span class="album-art art-3"></span>
+            <h3>Indie Radar</h3>
+            <p>New voices and bright guitar hooks.</p>
+          </article>
+          <article class="album-card">
+            <span class="album-art art-4"></span>
+            <h3>Workout Pulse</h3>
+            <p>High tempo tracks to keep moving.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="player" aria-label="Now playing">
+      <div class="track-info">
+        <span class="mini-cover"></span>
+        <div>
+          <strong>Golden Hour</strong>
+          <span>Nova Lane</span>
+        </div>
+      </div>
+      <div class="player-controls">
+        <div class="control-row">
+          <button aria-label="Shuffle">Sh</button>
+          <button aria-label="Previous">Prev</button>
+          <button class="main-control" aria-label="Play">Play</button>
+          <button aria-label="Next">Next</button>
+          <button aria-label="Repeat">Rp</button>
+        </div>
+        <div class="progress-row">
+          <span>1:12</span>
+          <div class="progress"><span></span></div>
+          <span>3:48</span>
+        </div>
+      </div>
+      <div class="volume-row">
+        <span>Vol</span>
+        <div class="volume"><span></span></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
